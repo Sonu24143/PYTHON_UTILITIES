@@ -1,0 +1,10 @@
+# test="mary had a little lamb"
+# res=""
+# for i in $test; do res="$res "+`./basiccipher.py encrypt $i`; done
+# echo $res
+?nnW *nZ y .vpRbn .ni9
+# res_de=""
+# for i in $res; do res_de="$res_de "`./basiccipher.py decrypt $i`; done
+# echo $res_de
+mary had a little lamb
+
