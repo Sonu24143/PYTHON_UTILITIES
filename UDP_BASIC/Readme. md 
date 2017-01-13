@@ -1,0 +1,4 @@
+This is a simple Text messenger using UDP protocol, 
+It works on client server model where the server is an orchestrator for the clients connected to it. 
+
+Here the server is called the master, and clients are called slaves, for this to function master and each slave must have one port freely allocated for listening, and while outgoing messages take random port based on availability.
