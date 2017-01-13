@@ -12,14 +12,17 @@ SEND_SOCKET = socket.socket( socket.AF_INET , socket.SOCK_DGRAM )
 LISTEN_SOCKET = socket.socket( socket.AF_INET , socket.SOCK_DGRAM )
 id_name=""
 my_name=""
+chat_file=""
 
 def initialize(server_address,port):
         global id_name
 	global my_name
+	global chat_file
         id_name=raw_input("Enter your name: ")
 	my_name=id_name
-	file=open(my_name,"w")
-	file.write("######### MESSENGER #########\n")
+	chat_file="."+id_name
+	file=open(chat_file,"w")
+	file.write("######### MESSENGER by Sonu #########\n"+my_name+"'s Session\n")
 	file.close()
         connection_request="CONNECTION_REQUEST:"+str(port)+":"+id_name
         SEND_SOCKET.sendto(connection_request,server_address)
@@ -35,13 +38,13 @@ def process(msg):
         if ( msg == "RESPONSE:SUCCESS"):
                 print("Connection successful")
         else:
-		file=open(my_name,"a")
+		file=open(chat_file,"a")
 		file.write(msg+"\n")
 		file.close()
 
 def draw_file():
 	os.system("clear")
-	file=open(my_name,"r")
+	file=open(chat_file,"r")
 	for line in file:
 		print line
 	file.close()
@@ -92,11 +95,11 @@ def Main():
 
                 if ( message == "bye" or message == "Bye" or message == "BYE" ):
                         destroyConn(SERVER_ADDRESS)
-			with( open(my_name."w" ):
+			with open(chat_file,"w" ):
 				pass
                         break
 		if ( my_name != id_name ):
-			file=open(my_name,"a")
+			file=open(chat_file,"a")
 			file.write(my_name+": "+message+"\n")
 			file.close()
                 SEND_SOCKET.sendto("MESSAGE_TEXT:"+id_name+":"+my_name+":"+message,SERVER_ADDRESS)

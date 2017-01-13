@@ -1,0 +1,36 @@
+#!/bin/sh
+
+if [ $# -eq 1 -a "$1" == "all" ]
+then
+echo "Cleaning workspace"
+rm -f *.pyc 2>&1 > build.log
+python -m compileall . 2>&1 > build.log
+echo "Cleaning old binaries"
+rm ../bin/* 2>&1 > build.log
+cp *.pyc ../bin/ 2>&1 > build.log
+cd ../bin
+for file in `ls`
+do
+mv ${file} `echo ${file} | cut -d . -f1`
+done
+echo "Built the files:"
+ls
+chmod 755 *
+cd ../src
+rm *.pyc 2>&1 > build.log
+exit 0
+else
+echo "make sure you are in the directory where the build file exists"
+echo "USAGE: ./build all"
+fi
+
+for i in $@;
+do
+	rm $i"c"
+	python -m compile $i
+	rm ../bin/$i"c"
+	cp $i"c" ../bin/$i"c"
+	echo "Build complete for $i"
+done
+
+exit 0
