@@ -2,3 +2,23 @@ This is a simple Text messenger using UDP protocol,
 It works on client server model where the server is an orchestrator for the clients connected to it. 
 
 Here the server is called the master, and clients are called slaves, for this to function master and each slave must have one port freely allocated for listening, and while outgoing messages take random port based on availability.
+
+QUICK USAGE :
+1) Start the master as a background process and redirect the output to a file 
+
+python master <master_ip> <master_port> > {logfile} & 
+
+2) Starting slave instance 
+
+python slave <master_ip> <master_port> <slave_ip> <slave_port>
+
+SUPPORTED COMMANDS :
+GETUSERS : Gets you a list of currently connected users. 
+
+connect to <username>: connects you to specified user. Your messages hence forth are directed to them. GETUSERS command will not work if you are connected to another user. 
+
+disconnect : disconnects you from recent connection. 
+
+STATE: shows who you are currently connected to. 
+
+Bye: this message exits the messenger.
