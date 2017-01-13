@@ -92,6 +92,8 @@ def Main():
 
                 if ( message == "bye" or message == "Bye" or message == "BYE" ):
                         destroyConn(SERVER_ADDRESS)
+			with( open(my_name."w" ):
+				pass
                         break
 		if ( my_name != id_name ):
 			file=open(my_name,"a")
