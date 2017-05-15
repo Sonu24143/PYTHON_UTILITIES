@@ -1,0 +1,100 @@
+2017-05-12 13:27:58 INFO  XmlDataValidation:177 - ValidateAndGetAgentBean:com.appnomic.appsone.common.beans.CustomAgentBean@74da12a9
+2017-05-12 13:27:58 INFO  XmlDataValidation:393 - Total component instances data received :3
+2017-05-12 13:27:58 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 22, component.getId() : 22
+2017-05-12 13:27:58 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 21, component.getId() : 21
+2017-05-12 13:27:58 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 7, component.getId() : 7
+2017-05-12 13:27:58 INFO  XmlDataValidation:428 - No transactions in data.
+2017-05-12 13:27:58 INFO  XmlDataValidation:442 - No forensics in request data.
+2017-05-12 13:27:58 INFO  AppsoneAgentUtil:35 - Response XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Response version="1.0" id="84e7f4b8-d00c-430c-8164-618c75973840" mode="MONITOR" ><Data><ComponentInstance name="WAS_SERVER_104_JVMDS" component="JVMDataSources" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="WAS_SERVER_104_JVM" component="JVMMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="WAS_SERVER_104" component="WebsphereMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance></Data></A1Response></A1>
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table JVMThreadMonitoringCOLL for 116 rows in 1 ms.
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table WebsphereMetricsCOLL for 1 rows in 4 ms.
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table JVMMetricsCOLL for 1 rows in 1 ms.
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table JVMThreadStackTrace for 116 rows in 5 ms.
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table JVMMemoryMonitoringCOLL for 5 rows in 1 ms.
+2017-05-12 13:27:58 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table JVMDataSourcesCOLL for 2 rows in 0 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:367 - Inserted component batch for table WebsphereMetricsCOLL size 1 rows in 16 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:367 - Inserted component batch for table JVMMetricsCOLL size 1 rows in 15 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table JVMMetricsCOLL and size:1, time:16 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table WebsphereMetricsCOLL and size:1, time:20 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:455 - Inserted batch for table JVMDataSourcesCOLL size 1 rows in 9 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:455 - Inserted batch for table JVMDataSourcesCOLL size 1 rows in 3 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table JVMDataSourcesCOLL and size:2, time:14 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:367 - Inserted component batch for table JVMThreadStackTrace size 116 rows in 22 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:367 - Inserted component batch for table JVMThreadMonitoringCOLL size 116 rows in 39 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table JVMThreadStackTrace and size:116, time:23 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table JVMThreadMonitoringCOLL and size:116, time:41 ms.
+2017-05-12 13:27:58 INFO  DatabaseDAO:367 - Inserted component batch for table JVMMemoryMonitoringCOLL size 5 rows in 3 ms.
+2017-05-12 13:27:58 INFO  BatchUpdateExecutor:109 - Time taken to complete a batch insert on table JVMMemoryMonitoringCOLL and size:5, time:4 ms.
+2017-05-12 13:28:28 INFO  AlertUpdateThread:146 - Alert update thread completed in 10 ms.
+2017-05-12 13:28:32 INFO  DataThread:174 - Received config XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Request version="1.0" id="59f702ba-b15a-4c20-b532-8acd2b787e58" mode="MONITOR" ><GetConfiguration></GetConfiguration></A1Request></A1>
+
+2017-05-12 13:28:32 INFO  XmlDataValidation:245 - ValidateAndGetAgentBean:com.appnomic.appsone.common.beans.CustomAgentBean@95da89d4
+2017-05-12 13:28:32 INFO  XmlDataValidation:468 - Configuration request.
+2017-05-12 13:28:32 INFO  XmlDataValidation:498 - No transactions in data.
+2017-05-12 13:28:32 INFO  XmlDataValidation:578 - Agent components need to be sent.
+2017-05-12 13:28:32 INFO  XmlDataValidation:3255 - Added agent bean to queue sucessfully. Bean:59f702ba-b15a-4c20-b532-8acd2b787e58
+2017-05-12 13:28:32 INFO  AppsoneAgentUtil:35 - Response XML :
+
+2017-05-12 13:28:37 INFO  DefinitionRequestCollector:71 - Transaction request definition queue, is null.
+2017-05-12 13:28:37 INFO  DefinitionRequestCollector:72 - Component request definition queue, size :0.
+2017-05-12 13:28:37 INFO  DefinitionRequestCollector:73 - Component instance request definition queue, size :0.
+2017-05-12 13:28:37 INFO  DefinitionRequestCollector:74 - PSAgent request definition queue, size :0.
+2017-05-12 13:28:37 INFO  DefinitionRequestCollector:75 - Agent request definition queue, size :0.
+2017-05-12 13:28:40 INFO  DataThread:174 - Received config XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Request version="1.0" id="d203ce90-979e-45c0-b700-8e7f3b420750" mode="MONITOR" ><GetConfiguration></GetConfiguration></A1Request></A1>
+
+2017-05-12 13:28:40 INFO  XmlDataValidation:245 - ValidateAndGetAgentBean:com.appnomic.appsone.common.beans.CustomAgentBean@d29d7f70
+2017-05-12 13:28:40 INFO  XmlDataValidation:468 - Configuration request.
+2017-05-12 13:28:40 INFO  XmlDataValidation:498 - No transactions in data.
+2017-05-12 13:28:40 INFO  XmlDataValidation:578 - Agent components need to be sent.
+2017-05-12 13:28:40 INFO  XmlDataValidation:3255 - Added agent bean to queue sucessfully. Bean:d203ce90-979e-45c0-b700-8e7f3b420750
+2017-05-12 13:28:40 INFO  AppsoneAgentUtil:35 - Response XML :
+
+2017-05-12 13:28:41 INFO  DefinitionRequestCollector:71 - Transaction request definition queue, size :0.
+2017-05-12 13:28:41 INFO  DefinitionRequestCollector:72 - Component request definition queue, size :0.
+2017-05-12 13:28:41 INFO  DefinitionRequestCollector:73 - Component instance request definition queue, size :0.
+2017-05-12 13:28:41 INFO  DefinitionRequestCollector:74 - PSAgent request definition queue, size :0.
+2017-05-12 13:28:41 INFO  DefinitionRequestCollector:75 - Agent request definition queue, size :0.
+2017-05-12 13:28:43 INFO  DataThread:174 - Received config XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Request version="1.0" id="84e7f4b8-d00c-430c-8164-618c75973840" mode="MONITOR" ><GetConfiguration></GetConfiguration></A1Request></A1>
+
+2017-05-12 13:28:43 INFO  XmlDataValidation:245 - ValidateAndGetAgentBean:com.appnomic.appsone.common.beans.CustomAgentBean@74da12a9
+2017-05-12 13:28:43 INFO  XmlDataValidation:468 - Configuration request.
+2017-05-12 13:28:43 INFO  XmlDataValidation:498 - No transactions in data.
+2017-05-12 13:28:43 ERROR XmlDataValidation:507 - Either component instance or component beans are null. componentInstanceBean:null, componentBean:null, enterprise:TestAppnomic, ReferenceId :20
+2017-05-12 13:28:43 INFO  XmlDataValidation:578 - Agent components need to be sent.
+2017-05-12 13:28:43 INFO  XmlDataValidation:3255 - Added agent bean to queue sucessfully. Bean:84e7f4b8-d00c-430c-8164-618c75973840
+2017-05-12 13:28:43 INFO  AppsoneAgentUtil:35 - Response XML :
+
+2017-05-12 13:28:44 INFO  DatabaseDAO:455 - Inserted batch for table A1AgentAVAILCOLL size 1 rows in 1 ms.
+2017-05-12 13:28:44 INFO  DatabaseDAO:455 - Inserted batch for table A1AgentAVAILCOLL size 1 rows in 2 ms.
+2017-05-12 13:28:44 INFO  DatabaseDAO:455 - Inserted batch for table A1AgentAVAILCOLL size 1 rows in 2 ms.
+2017-05-12 13:28:44 INFO  DatabaseDAO:455 - Inserted batch for table A1AgentAVAILCOLL size 1 rows in 2 ms.
+2017-05-12 13:28:44 INFO  DatabaseDAO:455 - Inserted batch for table A1AgentAVAILCOLL size 1 rows in 2 ms.
+2017-05-12 13:28:47 INFO  DataThread:228 - Received data XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Request version="1.0" id="59f702ba-b15a-4c20-b532-8acd2b787e58" mode="MONITOR" ><Data><ComponentInstance name="DB_42" component="MysqlMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="HANDLER_ROLLBACK" value="0" /><KPI name="TABLE_LOCKS_WAITED" value="0" /><KPI name="COM_STMT_PREPARE" value="193" /><KPI name="INNODB_LOG_WRITES" value="27" /><KPI name="INNODB_ROWS_READ" value="438" /><KPI name="INNODB_ROWS_DELETED" value="0" /><KPI name="COM_STMT_EXECUTE" value="195" /><KPI name="INNODB_ROWS_UPDATED" value="8" /><KPI name="CREATED_TMP_TABLES" value="294" /><KPI name="QUESTIONS" value="864" /><KPI name="INNODB_ROWS_INSERTED" value="18" /><KPI name="SLOW_QUERIES" value="0" /><KPI name="INNODB_BUFFER_POOL_PAGES_TOTAL" value="65528" /><KPI name="BYTES_RECEIVED" value="94105" /><KPI name="Time" value="2017-05-12 07:58:33" /><KPI name="THREADS_CONNECTED" value="143" /><KPI name="COM_STMT_FETCH" value="0" /><KPI name="OPEN_TABLES" value="813" /><KPI name="INNODB_BUFFER_POOL_WAIT_FREE" value="0" /><KPI name="HANDLER_COMMIT" value="192" /><KPI name="CREATED_TMP_FILES" value="0" /><KPI name="CONNECTIONS" value="45" /><KPI name="BYTES_SENT" value="551898" /><KPI name="THREADS_RUNNING" value="2" /></KPIs></ComponentInstance><ComponentInstance name="DB_61" component="MysqlMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="HANDLER_ROLLBACK" value="0" /><KPI name="TABLE_LOCKS_WAITED" value="0" /><KPI name="COM_STMT_PREPARE" value="33" /><KPI name="INNODB_LOG_WRITES" value="0" /><KPI name="INNODB_ROWS_READ" value="8" /><KPI name="INNODB_ROWS_DELETED" value="0" /><KPI name="COM_STMT_EXECUTE" value="33" /><KPI name="INNODB_ROWS_UPDATED" value="0" /><KPI name="CREATED_TMP_TABLES" value="84" /><KPI name="QUESTIONS" value="52" /><KPI name="INNODB_ROWS_INSERTED" value="0" /><KPI name="SLOW_QUERIES" value="0" /><KPI name="INNODB_BUFFER_POOL_PAGES_TOTAL" value="8191" /><KPI name="BYTES_RECEIVED" value="8949" /><KPI name="Time" value="2017-05-12 07:58:33" /><KPI name="THREADS_CONNECTED" value="32" /><KPI name="COM_STMT_FETCH" value="0" /><KPI name="OPEN_TABLES" value="181" /><KPI name="INNODB_BUFFER_POOL_WAIT_FREE" value="0" /><KPI name="HANDLER_COMMIT" value="6" /><KPI name="CREATED_TMP_FILES" value="0" /><KPI name="CONNECTIONS" value="8" /><KPI name="BYTES_SENT" value="70438" /><KPI name="THREADS_RUNNING" value="2" /></KPIs></ComponentInstance><ComponentInstance name="HOST_SELF" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:37" /><KPI name="CPU_UTIL" value="2.04" /><KPI name="LOAD_AVERAGE" value="0.0" /><KPI name="DISK_IOREAD" value="0.0" /><KPI name="DISK_IOWRITE" value="0.0" /><KPI name="MEM_UTIL" value="87.38987659656003" /></KPIs></ComponentInstance><ComponentInstance name="HOST_213" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:37" /><KPI name="CPU_UTIL" value="25.810000000000002" /><KPI name="LOAD_AVERAGE" value="1.01" /><KPI name="DISK_IOREAD" value="0.0" /><KPI name="DISK_IOWRITE" value="0.0" /><KPI name="MEM_UTIL" value="96.2481887491517" /></KPIs></ComponentInstance><ComponentInstance name="HOST_57" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:37" /><KPI name="CPU_UTIL" value="0.5" /><KPI name="LOAD_AVERAGE" value="0.0" /><KPI name="DISK_IOREAD" value="0.0" /><KPI name="DISK_IOWRITE" value="0.0" /><KPI name="MEM_UTIL" value="49.36908260208594" /></KPIs></ComponentInstance><ComponentInstance name="HOST_42" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:37" /><KPI name="CPU_UTIL" value="1.75" /><KPI name="LOAD_AVERAGE" value="0.06" /><KPI name="DISK_IOREAD" value="0.0" /><KPI name="DISK_IOWRITE" value="0.0" /><KPI name="MEM_UTIL" value="97.06745495564346" /></KPIs></ComponentInstance><ComponentInstance name="HOST_61" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:37" /><KPI name="CPU_UTIL" value="1.02" /><KPI name="LOAD_AVERAGE" value="0.02" /><KPI name="DISK_IOREAD" value="0.0" /><KPI name="DISK_IOWRITE" value="0.0" /><KPI name="MEM_UTIL" value="54.171218581384075" /></KPIs></ComponentInstance><ComponentInstance name="HP_UX" component="LinuxHostMetrics" enterprise="TestAppnomic" ><KPIs><KPI name="Time" value="2017-05-12 07:58:38" /><KPI name="CPU_UTIL" value="0.0" /><KPI name="LOAD_AVERAGE" value="0.04" /></KPIs></ComponentInstance></Data></A1Request></A1>
+
+2017-05-12 13:28:47 INFO  XmlDataValidation:177 - ValidateAndGetAgentBean:com.appnomic.appsone.common.beans.CustomAgentBean@95da89d4
+2017-05-12 13:28:47 INFO  XmlDataValidation:393 - Total component instances data received :8
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 2, component.getId() : 2
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 2, component.getId() : 2
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:1532 - :: isCompInstanceParentCheck : true, compId : 1, component.getId() : 1
+2017-05-12 13:28:47 INFO  XmlDataValidation:428 - No transactions in data.
+2017-05-12 13:28:47 INFO  XmlDataValidation:442 - No forensics in request data.
+2017-05-12 13:28:47 INFO  AppsoneAgentUtil:35 - Response XML :
+<A1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="A1DCASchema.xsd"><A1Response version="1.0" id="59f702ba-b15a-4c20-b532-8acd2b787e58" mode="MONITOR" ><Data><ComponentInstance name="DB_42" component="MysqlMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="DB_61" component="MysqlMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HOST_SELF" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HOST_213" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HOST_57" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HOST_42" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HOST_61" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance><ComponentInstance name="HP_UX" component="LinuxHostMetrics" ><Property value="null" result="SUCCESS" /></ComponentInstance></Data></A1Response></A1>
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table MysqlMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table MysqlMetricsCOLL for 1 rows in 2 ms.
+2017-05-12 13:28:50 INFO  DataRequestCollector:533 - Process the component instance data to db time took for table LinuxHostMetricsCOLL for 1 rows in 0 ms.
